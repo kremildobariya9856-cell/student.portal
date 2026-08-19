@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | CHARUSAT Student Hub</title>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+
+    <h1>CHARUSAT Student Hub</h1>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html" aria-current="page">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Profile</li>
+      </ol>
+    </nav>
+
+  <main id="main-content">
+    <h2>My profile</h2>
+    <section aria-labelledby="profile-details-heading">
+      <h3 id="profile-details-heading">Profile details</h3>
+      <dl>
+        <dt>Name</dt>
+        <dd>Student Name</dd>
+        <dt>Enrollment number and name</dt>
+        <dd>25AIML072 OM SUTARIYA</dd>
+        <dt>Department</dt>
+        <dd>AIML</dd>
+        <dt>Email</dt>
+        <dd>25AIML072@charusat.edu.in</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="edit-profile-heading">
+      <h3 id="edit-profile-heading">Update details</h3>
+      <form action="#" method="post">
+        <div>
+          <label for="profile-phone">Phone number</label>
+          <input type="tel" id="profile-phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div>
+          <label for="profile-photo">Profile photo</label>
+          <input type="file" id="profile-photo" name="photo" accept="image/*">
+        </div>
+
+        <button type="submit">Save changes</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 CHARUSAT Student Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
