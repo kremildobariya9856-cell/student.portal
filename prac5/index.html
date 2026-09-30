@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | CHARUSAT Student Hub</title>
+  <meta name="description" content="CHARUSAT Student Registration Portal for new academic accounts with instant validation and security features.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section with Theme Branding -->
+  <header>
+    <div class="header-brand">
+      <img src="./CHARUSAT.jpg" alt="CHARUSAT Logo">
+      <h1>CHARUSAT Student Hub</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="index.html" aria-current="page">Register</a></li>
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="../events.html">Events</a></li>
+        <li><a href="../profile.html">Profile</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../admin.html">Admin</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="breadcrumb-container">
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li aria-current="page">Student Registration</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- Page Title & Overview Banner -->
+    <div class="page-title-banner">
+      <h2>Student Account Registration</h2>
+      <p>Please complete all required fields below to create your official CHARUSAT Student Hub account. Ensure all information matches your institute records.</p>
+    </div>
+
+    <!-- Notification Alert Banner -->
+    <div id="alertBanner" class="alert-banner" role="alert" aria-live="assertive"></div>
+
+    <!-- Registration Form Section -->
+    <section class="form-section" aria-labelledby="form-heading">
+      <h3 id="form-heading">
+        <span>📝 Student Registration Form</span>
+      </h3>
+
+      <form id="studentRegisterForm" novalidate>
+
+        <!-- Personal Details Fieldset -->
+        <fieldset>
+          <legend>Personal & Contact Details</legend>
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="reg-name">Full Name <span class="required-star">*</span></label>
+            <input type="text" id="reg-name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" required aria-describedby="name-hint err-name">
+            <div id="name-hint" class="field-hint">Enter your full name (alphabets and spaces only, 3-50 characters).</div>
+            <div id="err-name" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="reg-email">Email Address <span class="required-star">*</span></label>
+            <input type="email" id="reg-email" name="email" placeholder="e.g. rahul.ce24@charusat.edu.in" autocomplete="email" required aria-describedby="email-hint err-email">
+            <div id="email-hint" class="field-hint">Must be a valid email format (e.g. username@domain.com or student@charusat.edu.in).</div>
+            <div id="err-email" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- Mobile Number -->
+          <div class="form-group">
+            <label for="reg-phone">Mobile Number <span class="required-star">*</span></label>
+            <input type="tel" id="reg-phone" name="phone" placeholder="e.g. 9876543210" maxlength="10" autocomplete="tel" required aria-describedby="phone-hint err-phone">
+            <div id="phone-hint" class="field-hint">10-digit Indian mobile number starting with 6, 7, 8, or 9.</div>
+            <div id="err-phone" class="error-message" role="alert"></div>
+          </div>
+        </fieldset>
+
+        <!-- Academic Information Fieldset -->
+        <fieldset>
+          <legend>Academic Information</legend>
+
+          <!-- Course Selection -->
+          <div class="form-group">
+            <label for="reg-course">Enrolled Course <span class="required-star">*</span></label>
+            <select id="reg-course" name="course" required aria-describedby="course-hint err-course">
+              <option value="">-- Select Your Degree Program --</option>
+              <option value="BTECH_CSE">B.Tech - Computer Engineering</option>
+              <option value="BTECH_IT">B.Tech - Information Technology</option>
+              <option value="BTECH_AI">B.Tech - Artificial Intelligence & Data Science</option>
+              <option value="BTECH_EC">B.Tech - Electronics & Communication</option>
+              <option value="BCA">BCA - Bachelor of Computer Applications</option>
+              <option value="MCA">MCA - Master of Computer Applications</option>
+              <option value="MTECH_CSE">M.Tech - Computer Science & Engineering</option>
+            </select>
+            <div id="course-hint" class="field-hint">Select the program you are currently enrolled in at CHARUSAT.</div>
+            <div id="err-course" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- Academic Year Radio Buttons -->
+          <div class="form-group" id="yearGroup">
+            <label>Academic Year <span class="required-star">*</span></label>
+            <div class="radio-group" role="radiogroup" aria-label="Academic Year Selection">
+              <label class="radio-label">
+                <input type="radio" name="year" value="1st Year"> 1st Year (Semester 1/2)
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="year" value="2nd Year"> 2nd Year (Semester 3/4)
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="year" value="3rd Year"> 3rd Year (Semester 5/6)
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="year" value="4th Year"> 4th Year (Semester 7/8)
+              </label>
+            </div>
+            <div id="err-year" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- Gender Radio Buttons -->
+          <div class="form-group" id="genderGroup">
+            <label>Gender <span class="required-star">*</span></label>
+            <div class="radio-group" role="radiogroup" aria-label="Gender Selection">
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Male"> Male
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Female"> Female
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="Other"> Other / Prefer not to say
+              </label>
+            </div>
+            <div id="err-gender" class="error-message" role="alert"></div>
+          </div>
+        </fieldset>
+
+        <!-- Account Security & Validation Fieldset -->
+        <fieldset>
+          <legend>Account Security & Verification</legend>
+
+          <!-- Password Field with Strength Meter -->
+          <div class="form-group">
+            <label for="reg-password">Password <span class="required-star">*</span></label>
+            <div class="password-wrapper">
+              <input type="password" id="reg-password" name="password" autocomplete="new-password" placeholder="••••••••" required aria-describedby="password-hint err-password">
+              <button type="button" id="togglePasswordBtn" class="password-toggle-btn" aria-label="Show password text">Show</button>
+            </div>
+            <div id="password-hint" class="field-hint">Minimum 8 characters, at least 1 uppercase, 1 lowercase, 1 digit, and 1 special character (@#$%^&*).</div>
+            
+            <!-- Password Strength Meter -->
+            <div class="password-strength-container" aria-live="polite">
+              <div class="strength-bar-bg">
+                <div id="strengthBarFill" class="strength-bar-fill"></div>
+              </div>
+              <span id="strengthText" class="strength-text"></span>
+            </div>
+            <div id="err-password" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- Confirm Password Field -->
+          <div class="form-group">
+            <label for="reg-confirm-password">Confirm Password <span class="required-star">*</span></label>
+            <div class="password-wrapper">
+              <input type="password" id="reg-confirm-password" name="confirmPassword" autocomplete="new-password" placeholder="••••••••" required aria-describedby="confirm-hint err-confirm">
+              <button type="button" id="toggleConfirmBtn" class="password-toggle-btn" aria-label="Show password text">Show</button>
+            </div>
+            <div id="confirm-hint" class="field-hint">Re-enter your password to verify matching.</div>
+            <div id="err-confirm" class="error-message" role="alert"></div>
+          </div>
+
+          <!-- HTML5 Canvas CAPTCHA (Advanced Extension) -->
+          <div class="form-group">
+            <label for="reg-captcha-input">Security Verification (Canvas CAPTCHA) <span class="required-star">*</span></label>
+            <div class="captcha-container">
+              <div class="captcha-box">
+                <canvas id="captchaCanvas" width="160" height="42" aria-label="Visual CAPTCHA security code image"></canvas>
+                <button type="button" id="btnRefreshCaptcha" class="btn-refresh-captcha" aria-label="Generate new CAPTCHA code">
+                  🔄 Refresh CAPTCHA
+                </button>
+              </div>
+              <input type="text" id="reg-captcha-input" name="captcha" placeholder="Enter characters shown above" autocomplete="off" required aria-describedby="captcha-hint err-captcha">
+              <div id="captcha-hint" class="field-hint">Case-insensitive CAPTCHA security check.</div>
+              <div id="err-captcha" class="error-message" role="alert"></div>
+            </div>
+          </div>
+
+          <!-- Terms & Conditions Checkbox -->
+          <div class="form-group" id="termsGroup">
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="reg-terms" name="terms" required aria-describedby="err-terms">
+                <span>I accept the <a href="#" onclick="alert('CHARUSAT Student Academic Conduct Policy and Data Privacy Terms.'); return false;">Terms of Service & Code of Conduct</a> <span class="required-star">*</span></span>
+              </label>
+            </div>
+            <div id="err-terms" class="error-message" role="alert"></div>
+          </div>
+        </fieldset>
+
+        <!-- Form Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">🚀 Complete Registration</button>
+          <button type="reset" class="btn-secondary">🧹 Reset Form</button>
+        </div>
+      </form>
+
+      <!-- Live Submission Summary Card -->
+      <div id="summaryCard" class="summary-card" aria-live="polite">
+        <h4>🎉 Registration Confirmation Summary</h4>
+        <div id="summaryDetails" class="summary-details"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section matching Prac-4 style -->
+  <footer>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+        <li><a href="test-cases.html" style="color:#ff9800;">Lab Evaluation Matrix</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 CHARUSAT Student Hub | Department of Computer Engineering. All rights reserved.</p>
+  </footer>
+
+  <!-- Script File Link -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

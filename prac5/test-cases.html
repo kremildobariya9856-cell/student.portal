@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 5: Test Cases & Evaluation Matrix | CHARUSAT Student Hub</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="header-brand">
+      <img src="./CHARUSAT.jpg" alt="CHARUSAT Logo">
+      <h1>CHARUSAT Student Hub</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Register Form</a></li>
+        <li><a href="test-cases.html" aria-current="page">Evaluation Matrix</a></li>
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-title-banner">
+      <h2>Practical 5: Validation Test Cases & Syllabus Evaluation Matrix</h2>
+      <p>Technical evaluation documentation for frontend validation rules, Regular Expression patterns, and test case results.</p>
+    </div>
+
+    <!-- Practical Metadata Information Card -->
+    <div class="prac-meta-card">
+      <h3 style="color:#003366; font-size:1.1rem; margin-bottom:8px;">📋 Practical Information & Syllabus Mapping</h3>
+      <div class="prac-meta-grid">
+        <div class="meta-item">
+          <strong>Course Outcome Mapping:</strong>
+          <span>CO1 (HTML5 & Form Design), CO3 (Client-side Scripting & RegEx Validation)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Key Skills Addressed:</strong>
+          <span>HTML Forms, Regular Expressions, Password Strength Meter, UX Error Messaging, Canvas API</span>
+        </div>
+        <div class="meta-item">
+          <strong>Applied Extensions:</strong>
+          <span>Real-time Event Listeners (Intermediate) & Custom Canvas CAPTCHA (Advanced)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Accessibility Standard:</strong>
+          <span>WCAG 2.1 AA Compliant (ARIA Live Labels, Keyboard Focus, High Contrast)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comprehensive Validation Test Cases Section -->
+    <section class="test-cases-section" aria-labelledby="test-cases-heading">
+      <h3 id="test-cases-heading">🧪 Practical Validation Test Cases & Evaluation Matrix</h3>
+      <p>The matrix below records the test cases evaluated for client-side HTML5 & JavaScript Regular Expression validation logic:</p>
+
+      <table>
+        <caption>Validation Test Vectors and Regular Expressions Summary</caption>
+        <thead>
+          <tr>
+            <th>Test ID</th>
+            <th>Input Field</th>
+            <th>Test Input / Scenario</th>
+            <th>RegEx Pattern Used</th>
+            <th>Expected Behavior</th>
+            <th>Validation Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>TC-01</code></td>
+            <td>Full Name</td>
+            <td><code>"John123"</code> (Invalid digits)</td>
+            <td><code>/^[A-Za-z\s]{3,50}$/</code></td>
+            <td>Inline error: Alphabet characters only</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-02</code></td>
+            <td>Full Name</td>
+            <td><code>"Rahul Sharma"</code> (Valid)</td>
+            <td><code>/^[A-Za-z\s]{3,50}$/</code></td>
+            <td>Green border & success checkmark</td>
+            <td><span class="badge badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-03</code></td>
+            <td>Email</td>
+            <td><code>"student@com"</code> (Invalid domain)</td>
+            <td><code>/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/</code></td>
+            <td>Inline error: Valid email format required</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-04</code></td>
+            <td>Email</td>
+            <td><code>"rahul.ce24@charusat.edu.in"</code></td>
+            <td><code>/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/</code></td>
+            <td>Accepted & verified</td>
+            <td><span class="badge badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-05</code></td>
+            <td>Mobile Number</td>
+            <td><code>"5432109876"</code> (Starts with 5)</td>
+            <td><code>/^[6-9]\d{9}$/</code></td>
+            <td>Inline error: Must start with 6-9</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-06</code></td>
+            <td>Mobile Number</td>
+            <td><code>"9876543210"</code> (10 digits)</td>
+            <td><code>/^[6-9]\d{9}$/</code></td>
+            <td>Accepted & verified</td>
+            <td><span class="badge badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-07</code></td>
+            <td>Password</td>
+            <td><code>"abc123"</code> (No uppercase/special)</td>
+            <td><code>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)...$/</code></td>
+            <td>Strength Meter: Red (Weak) + Error</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-08</code></td>
+            <td>Password</td>
+            <td><code>"Charusat@2026"</code> (Valid strong)</td>
+            <td><code>/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)...$/</code></td>
+            <td>Strength Meter: Green (Strong ✓)</td>
+            <td><span class="badge badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-09</code></td>
+            <td>Confirm Password</td>
+            <td>Mismatched string</td>
+            <td><code>confirmVal === passVal</code></td>
+            <td>Inline error: Passwords do not match</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-10</code></td>
+            <td>Canvas CAPTCHA</td>
+            <td>Incorrect code typed</td>
+            <td><code>Canvas Draw + Match Check</code></td>
+            <td>Inline error: Incorrect CAPTCHA text</td>
+            <td><span class="badge badge-invalid">FAIL DETECTED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-11</code></td>
+            <td>Form Submission</td>
+            <td>All fields valid & checked</td>
+            <td>All RegEx + Event Handlers</td>
+            <td>Success banner & Summary Card displayed</td>
+            <td><span class="badge badge-valid">PASSED</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="index.html" class="btn-primary" style="text-decoration:none; display:inline-block;">← Back to Student Registration Form</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT Student Hub | Department of Computer Engineering. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
