@@ -1,0 +1,167 @@
+[
+  {
+    "id": 101,
+    "title": "SPOURAL 2026 - Annual Sports Fest",
+    "category": "Sports",
+    "date": "2026-10-15",
+    "venue": "CHARUSAT Athletics Ground",
+    "organizer": "Kremil Dobariya (System Admin)",
+    "attendees": 450,
+    "status": "Upcoming",
+    "description": "Inter-college athletic meet featuring cricket, football, basketball, badminton, and track events."
+  },
+  {
+    "id": 102,
+    "title": "Cognizance 2026 - National Tech Symposium",
+    "category": "Technical",
+    "date": "2026-11-02",
+    "venue": "DEPSTAR Auditorium",
+    "organizer": "Department of Computer Engineering",
+    "attendees": 600,
+    "status": "Upcoming",
+    "description": "National level hackathon, paper presentations, AI code sprints, and robotics competitions."
+  },
+  {
+    "id": 103,
+    "title": "AI & Deep Learning Hands-On Workshop",
+    "category": "Workshop",
+    "date": "2026-10-08",
+    "venue": "Lab 402, CSPIT",
+    "organizer": "IEEE Student Branch",
+    "attendees": 120,
+    "status": "Upcoming",
+    "description": "Comprehensive 2-day session covering PyTorch, Transformer architectures, and LLM fine-tuning."
+  },
+  {
+    "id": 104,
+    "title": "Cultural Night & Talent Hunt",
+    "category": "Cultural",
+    "date": "2026-11-20",
+    "venue": "Central Amphitheatre",
+    "organizer": "Cultural Club",
+    "attendees": 800,
+    "status": "Upcoming",
+    "description": "Annual music, dance, drama, and fashion showcase celebrating campus diversity."
+  },
+  {
+    "id": 105,
+    "title": "Cyber Security & Ethical Hacking Bootcamp",
+    "category": "Workshop",
+    "date": "2026-09-12",
+    "venue": "Online Webinar",
+    "organizer": "CSI Student Chapter",
+    "attendees": 250,
+    "status": "Completed",
+    "description": "Explored network penetration testing, CTF challenges, and OWASP top 10 vulnerabilities."
+  },
+  {
+    "id": 106,
+    "title": "Campus Placement Drive - Tech Mahindra",
+    "category": "Placement",
+    "date": "2026-10-25",
+    "venue": "Training & Placement Cell",
+    "organizer": "CHARUSAT T&P Cell",
+    "attendees": 300,
+    "status": "Upcoming",
+    "description": "On-campus recruitment drive for final year B.Tech, MCA, and M.Tech students."
+  },
+  {
+    "id": 107,
+    "title": "Web3 & Blockchain Developer Summit",
+    "category": "Technical",
+    "date": "2026-12-05",
+    "venue": "Seminar Hall 1",
+    "organizer": "Developer Student Club",
+    "attendees": 180,
+    "status": "Upcoming",
+    "description": "Introduction to Smart Contracts, Solidity development, and decentralized applications."
+  },
+  {
+    "id": 108,
+    "title": "Blood Donation & Health Checkup Camp",
+    "category": "Social Cause",
+    "date": "2026-09-05",
+    "venue": "Student Activity Centre",
+    "organizer": "NSS Wing",
+    "attendees": 350,
+    "status": "Completed",
+    "description": "Voluntary blood donation drive organized in association with Indian Red Cross Society."
+  },
+  {
+    "id": 109,
+    "title": "Cloud Computing & AWS Certification Bootcamp",
+    "category": "Workshop",
+    "date": "2026-10-18",
+    "venue": "Computer Lab 301",
+    "organizer": "AWS Academy CHARUSAT",
+    "attendees": 140,
+    "status": "Upcoming",
+    "description": "Hands-on cloud infrastructure provisioning, S3, EC2 deployment, and serverless architectures."
+  },
+  {
+    "id": 110,
+    "title": "Annual Alumni Reconnect & Networking Dinner",
+    "category": "Alumni",
+    "date": "2026-12-18",
+    "venue": "CHARUSAT Guest House Lawn",
+    "organizer": "Alumni Association",
+    "attendees": 220,
+    "status": "Upcoming",
+    "description": "Interactive networking event connecting current students with distinguished CHARUSAT alumni."
+  },
+  {
+    "id": 111,
+    "title": "GameDev 24-Hour Game Jam",
+    "category": "Technical",
+    "date": "2026-11-14",
+    "venue": "Game Lab, IIIM",
+    "organizer": "Game Development Club",
+    "attendees": 95,
+    "status": "Upcoming",
+    "description": "Create games from scratch using Unity and Unreal Engine within a 24-hour sprint."
+  },
+  {
+    "id": 112,
+    "title": "Design Thinking & UI/UX Workshop",
+    "category": "Workshop",
+    "date": "2026-08-28",
+    "venue": "Design Studio",
+    "organizer": "Department of IT",
+    "attendees": 110,
+    "status": "Completed",
+    "description": "Mastering wireframing, Figma prototyping, usability testing, and visual design principles."
+  },
+  {
+    "id": 113,
+    "title": "Inter-Department Chess Championship",
+    "category": "Sports",
+    "date": "2026-10-10",
+    "venue": "Indoor Sports Complex",
+    "organizer": "Sports Club",
+    "attendees": 64,
+    "status": "Upcoming",
+    "description": "Rapid and Blitz chess tournament across all university institutes."
+  },
+  {
+    "id": 114,
+    "title": "Entrepreneurship & Startup Pitch Competition",
+    "category": "Business",
+    "date": "2026-11-28",
+    "venue": "EDC Incubator Center",
+    "organizer": "Entrepreneurship Development Cell",
+    "attendees": 130,
+    "status": "Upcoming",
+    "description": "Pitch innovative business ideas to angel investors and seed fund mentors."
+  },
+  {
+    "id": 115,
+    "title": "Environmental Sustainability & Tree Plantation",
+    "category": "Social Cause",
+    "date": "2026-08-15",
+    "venue": "Campus Botanical Garden",
+    "organizer": "Eco Club",
+    "attendees": 210,
+    "status": "Completed",
+    "description": "Planted 500 saplings across the campus on Independence Day celebration."
+  }
+]

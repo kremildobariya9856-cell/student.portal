@@ -1,0 +1,152 @@
+[
+  {
+    "id": 201,
+    "name": "Kremil Dobariya",
+    "email": "25DCE022@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "Student Administrator",
+    "gpa": 9.95,
+    "skills": ["System Admin", "React", "Node.js", "Python", "Cloud Security"],
+    "status": "System Admin"
+  },
+  {
+    "id": 202,
+    "name": "Diya Shah",
+    "email": "diya.it24@charusat.edu.in",
+    "department": "Information Technology",
+    "year": "2nd Year",
+    "gpa": 9.15,
+    "skills": ["Java", "Spring Boot", "MySQL", "Git"],
+    "status": "Active"
+  },
+  {
+    "id": 203,
+    "name": "Rohan Sharma",
+    "email": "rohan.ai23@charusat.edu.in",
+    "department": "AI & Data Science",
+    "year": "3rd Year",
+    "gpa": 8.85,
+    "skills": ["TensorFlow", "PyTorch", "Python", "OpenCV"],
+    "status": "Active"
+  },
+  {
+    "id": 204,
+    "name": "Ananya Joshi",
+    "email": "ananya.ce22@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "4th Year",
+    "gpa": 9.68,
+    "skills": ["Go", "Kubernetes", "AWS", "Microservices"],
+    "status": "Graduating"
+  },
+  {
+    "id": 205,
+    "name": "Karan Mehta",
+    "email": "karan.mca24@charusat.edu.in",
+    "department": "Computer Applications",
+    "year": "1st Year",
+    "gpa": 8.40,
+    "skills": ["PHP", "Laravel", "JavaScript", "HTML/CSS"],
+    "status": "Active"
+  },
+  {
+    "id": 206,
+    "name": "Priya Desai",
+    "email": "priya.it23@charusat.edu.in",
+    "department": "Information Technology",
+    "year": "3rd Year",
+    "gpa": 9.02,
+    "skills": ["Flutter", "Dart", "Firebase", "UI/UX"],
+    "status": "Active"
+  },
+  {
+    "id": 207,
+    "name": "Devansh Trivedi",
+    "email": "devansh.ec24@charusat.edu.in",
+    "department": "Electronics & Comm.",
+    "year": "2nd Year",
+    "gpa": 8.65,
+    "skills": ["Embedded C", "IoT", "Arduino", "Raspberry Pi"],
+    "status": "Active"
+  },
+  {
+    "id": 208,
+    "name": "Sneha Parmar",
+    "email": "sneha.ce25@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "1st Year",
+    "gpa": 8.90,
+    "skills": ["C++", "Data Structures", "Algorithms", "HTML5"],
+    "status": "Active"
+  },
+  {
+    "id": 209,
+    "name": "Harsh Vora",
+    "email": "harsh.ai24@charusat.edu.in",
+    "department": "AI & Data Science",
+    "year": "2nd Year",
+    "gpa": 9.30,
+    "skills": ["Scikit-Learn", "Pandas", "R", "SQL"],
+    "status": "Active"
+  },
+  {
+    "id": 210,
+    "name": "Meera Bhatt",
+    "email": "meera.bca23@charusat.edu.in",
+    "department": "Computer Applications",
+    "year": "3rd Year",
+    "gpa": 8.75,
+    "skills": ["Vue.js", "Tailwind CSS", "REST API", "MongoDB"],
+    "status": "Active"
+  },
+  {
+    "id": 211,
+    "name": "Vikas Rathod",
+    "email": "vikas.ce22@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "4th Year",
+    "gpa": 9.55,
+    "skills": ["Cyber Security", "Linux", "Ethical Hacking", "Python"],
+    "status": "Graduating"
+  },
+  {
+    "id": 212,
+    "name": "Tanvi Solanki",
+    "email": "tanvi.it25@charusat.edu.in",
+    "department": "Information Technology",
+    "year": "1st Year",
+    "gpa": 8.20,
+    "skills": ["Python", "SQL", "HTML5", "CSS3"],
+    "status": "Active"
+  },
+  {
+    "id": 213,
+    "name": "Yash Zaveri",
+    "email": "yash.mtech24@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "Post Graduate",
+    "gpa": 9.75,
+    "skills": ["Natural Language Processing", "BERT", "Deep Learning", "PyTorch"],
+    "status": "Research Scholar"
+  },
+  {
+    "id": 214,
+    "name": "Ishita Gandhi",
+    "email": "ishita.ai23@charusat.edu.in",
+    "department": "AI & Data Science",
+    "year": "3rd Year",
+    "gpa": 9.10,
+    "skills": ["Data Visualization", "Tableau", "Power BI", "Python"],
+    "status": "Active"
+  },
+  {
+    "id": 215,
+    "name": "Siddharth Doshi",
+    "email": "siddharth.ce23@charusat.edu.in",
+    "department": "Computer Engineering",
+    "year": "3rd Year",
+    "gpa": 8.95,
+    "skills": ["Swift", "iOS Development", "CoreData", "Git"],
+    "status": "Active"
+  }
+]

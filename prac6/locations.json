@@ -1,0 +1,21 @@
+{
+  "India": {
+    "Gujarat": ["Anand", "Nadiad", "Vadodara", "Ahmedabad", "Surat", "Rajkot"],
+    "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Nashik", "Thane"],
+    "Karnataka": ["Bengaluru", "Mysuru", "Hubballi", "Mangaluru"],
+    "Delhi NCR": ["New Delhi", "Noida", "Gurugram", "Faridabad"]
+  },
+  "United States": {
+    "California": ["San Francisco", "Los Angeles", "San Jose", "San Diego"],
+    "New York": ["New York City", "Buffalo", "Albany", "Rochester"],
+    "Texas": ["Austin", "Houston", "Dallas", "San Antonio"]
+  },
+  "United Kingdom": {
+    "England": ["London", "Manchester", "Birmingham", "Cambridge", "Oxford"],
+    "Scotland": ["Edinburgh", "Glasgow", "Aberdeen"]
+  },
+  "Canada": {
+    "Ontario": ["Toronto", "Ottawa", "Hamilton", "Kitchener"],
+    "British Columbia": ["Vancouver", "Victoria", "Surrey"]
+  }
+}

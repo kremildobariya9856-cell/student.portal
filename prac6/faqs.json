@@ -1,0 +1,122 @@
+[
+  {
+    "id": 301,
+    "question": "How do I register for semester examination backlogs or re-checking?",
+    "answer": "Students can apply for examination re-checking or backlog registration via the Student Hub portal under the Academic tab within 7 days of result declaration.",
+    "category": "Academics",
+    "tags": ["Exam", "Results", "Rechecking", "Backlog"],
+    "helpfulCount": 142
+  },
+  {
+    "id": 302,
+    "question": "What is the minimum attendance requirement to appear in end-semester exams?",
+    "answer": "CHARUSAT academic regulations require a minimum of 75% attendance in both lectures and practical sessions for each course.",
+    "category": "Academics",
+    "tags": ["Attendance", "Regulations", "Eligibility"],
+    "helpfulCount": 210
+  },
+  {
+    "id": 303,
+    "question": "How can I apply for a bonafide certificate or transcript?",
+    "answer": "Submit an online application through the Administrative Services section on the portal or visit the Student Section in the Central Administration Building.",
+    "category": "Administration",
+    "tags": ["Certificate", "Transcript", "Documents"],
+    "helpfulCount": 98
+  },
+  {
+    "id": 304,
+    "question": "What are the timings and access rules for the Central Library?",
+    "answer": "The Central Library is open from 8:00 AM to 8:00 PM on weekdays and 9:00 AM to 5:00 PM on Saturdays. Digital library resources are accessible 24/7.",
+    "category": "Library",
+    "tags": ["Library", "Timings", "Books", "E-resources"],
+    "helpfulCount": 175
+  },
+  {
+    "id": 305,
+    "question": "How do I connect to the CHARUSAT High-Speed Campus Wi-Fi?",
+    "answer": "Connect to 'CHARUSAT-STUDENT' network and log in using your University Enrollment Number and portal password. MAC binding is required.",
+    "category": "IT Support",
+    "tags": ["WiFi", "Internet", "Credentials", "Network"],
+    "helpfulCount": 320
+  },
+  {
+    "id": 306,
+    "question": "Where can I find information about upcoming placement drives?",
+    "answer": "Training & Placement opportunities are updated daily on the T&P Cell Notice Board on the portal and broadcasted via student email.",
+    "category": "Placements",
+    "tags": ["Jobs", "Campus Drive", "T&P", "Recruitment"],
+    "helpfulCount": 189
+  },
+  {
+    "id": 307,
+    "question": "How do I apply for merit-based or NEED-based scholarships?",
+    "answer": "Scholarship forms are available at the beginning of each academic year under the Financial Aid section. Submit required income proof before the deadline.",
+    "category": "Scholarships",
+    "tags": ["Financial Aid", "Fees", "Merit", "Scholarship"],
+    "helpfulCount": 165
+  },
+  {
+    "id": 308,
+    "question": "What hostel facilities are provided and how do I apply for accommodation?",
+    "answer": "Separate boys and girls hostels are available on campus with Wi-Fi, mess, and security. Hostel allocation forms are available online during admission.",
+    "category": "Hostel",
+    "tags": ["Accommodation", "Hostel", "Mess", "Campus Life"],
+    "helpfulCount": 130
+  },
+  {
+    "id": 309,
+    "question": "What steps should I take if I face technical issues during online exam submission?",
+    "answer": "Immediately capture a screenshot of the error with timestamp and report to exam.support@charusat.edu.in within 15 minutes of the issue.",
+    "category": "IT Support",
+    "tags": ["Online Exam", "Technical Support", "Error"],
+    "helpfulCount": 85
+  },
+  {
+    "id": 3010,
+    "question": "How can I join campus clubs like Robotics, Cultural, or IEEE?",
+    "answer": "Club orientation drives take place during the first month of the odd semester. Students can also register online through the Events page.",
+    "category": "Campus Life",
+    "tags": ["Clubs", "Societies", "Activities", "IEEE"],
+    "helpfulCount": 115
+  },
+  {
+    "id": 3011,
+    "question": "What is the procedure for paying tuition fees online?",
+    "answer": "Tuition fees can be paid via Net Banking, UPI, or Credit/Debit Cards through the Pay Fees option on the Student Portal. E-receipt is generated instantly.",
+    "category": "Administration",
+    "tags": ["Fees", "Payment", "Online Fee", "Receipt"],
+    "helpfulCount": 240
+  },
+  {
+    "id": 3012,
+    "question": "Is bus transportation facility available for day scholars from nearby cities?",
+    "answer": "Yes, CHARUSAT operates a fleet of AC buses connecting Anand, Nadiad, Vadodara, and Ahmedabad. Bus passes can be renewed per semester.",
+    "category": "Transport",
+    "tags": ["Bus", "Transport", "Commute", "Pass"],
+    "helpfulCount": 150
+  },
+  {
+    "id": 3013,
+    "question": "How can I submit feedback regarding course faculty or campus infrastructure?",
+    "answer": "Anonymous student feedback forms are opened twice a semester under the Feedback tab in your student dashboard.",
+    "category": "Feedback",
+    "tags": ["Feedback", "Faculty", "Infrastructure", "Evaluation"],
+    "helpfulCount": 78
+  },
+  {
+    "id": 3014,
+    "question": "What emergency medical services are available on campus?",
+    "answer": "The CHARUSAT Health Centre provides 24/7 free medical consultation, first aid, and ambulance service for all students and staff.",
+    "category": "Health & Safety",
+    "tags": ["Health", "Medical", "Emergency", "Ambulance"],
+    "helpfulCount": 160
+  },
+  {
+    "id": 3015,
+    "question": "How can I reset my forgotten student portal password?",
+    "answer": "Click on 'Forgot Password' on the login screen, enter your registered email ID, and follow the link sent to your email to set a new password.",
+    "category": "IT Support",
+    "tags": ["Password", "Reset", "Login", "Account Security"],
+    "helpfulCount": 290
+  }
+]

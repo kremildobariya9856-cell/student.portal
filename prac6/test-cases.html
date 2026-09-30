@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 6: Test Cases & Evaluation Matrix | CHARUSAT Student Hub</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="header-brand">
+      <img src="./CHARUSAT.jpg" alt="CHARUSAT Logo">
+      <h1>CHARUSAT Student Hub</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Data Hub</a></li>
+        <li><a href="test-cases.html" aria-current="page">Evaluation Matrix</a></li>
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-title-banner">
+      <h2>Practical 6: Rendering External JSON Data using Fetch API, Search and Filter</h2>
+      <p>Technical evaluation documentation for Fetch API data parsing, JavaScript array methods (.map, .filter, .sort, .slice), localStorage caching, and pagination controls.</p>
+    </div>
+
+    <!-- Practical Metadata Information Card -->
+    <div class="prac-meta-card" style="background:white; border-left:5px solid #ff9800; padding:20px; border-radius:8px; margin-bottom:25px;">
+      <h3 style="color:#003366; font-size:1.1rem; margin-bottom:8px;">📋 Practical Information & Syllabus Mapping</h3>
+      <div class="prac-meta-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px;">
+        <div class="meta-item">
+          <strong>Course Outcome Mapping:</strong>
+          <span>CO3 (Client-side Data Processing), CO4 (Dynamic UI & Modular JavaScript)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Datasets Integrated:</strong>
+          <span><code>events.json</code> (15 items), <code>students.json</code> (15 items), <code>faqs.json</code> (15 items)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Applied Extensions:</strong>
+          <span>Dependent Dropdowns (Intermediate) & LocalStorage Cache (Advanced)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Array Methods Used:</strong>
+          <span><code>.map()</code>, <code>.filter()</code>, <code>.sort()</code>, <code>.slice()</code>, <code>.reduce()</code></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comprehensive Validation Test Cases Section -->
+    <section class="test-cases-section" aria-labelledby="test-cases-heading">
+      <h3 id="test-cases-heading">🧪 Practical 6 Evaluation Test Matrix</h3>
+      <p>The matrix below documents the test cases evaluated for Fetch API requests, search filtering, sorting, pagination, and caching logic:</p>
+
+      <table>
+        <caption>Fetch API & Data Processing Verification Matrix</caption>
+        <thead>
+          <tr>
+            <th>Test ID</th>
+            <th>Feature / Function</th>
+            <th>Test Input / Action</th>
+            <th>JS Array / API Method</th>
+            <th>Expected Behavior</th>
+            <th>Evaluation Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>TC-01</code></td>
+            <td>Fetch API Data Loading</td>
+            <td>Switch to "Campus Events" Tab</td>
+            <td><code>fetch('./events.json')</code></td>
+            <td>JSON parsed & rendered dynamically</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-02</code></td>
+            <td>Search Keyword Filter</td>
+            <td>Type <code>"Hackathon"</code> in search box</td>
+            <td><code>Array.prototype.filter()</code></td>
+            <td>Cards filtered to matching titles/tags</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-03</code></td>
+            <td>Category Dropdown Filter</td>
+            <td>Select <code>"Workshop"</code> category</td>
+            <td><code>Array.prototype.filter()</code></td>
+            <td>Displays only Workshop items</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-04</code></td>
+            <td>Sorting Control (A-Z)</td>
+            <td>Select <code>"Title (A to Z)"</code></td>
+            <td><code>Array.prototype.sort()</code></td>
+            <td>Alphabetical sorting of rendered cards</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-05</code></td>
+            <td>Pagination Logic</td>
+            <td>Click Page <code>2</code> button</td>
+            <td><code>Array.prototype.slice()</code></td>
+            <td>Displays items index 6 to 12</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-06</code></td>
+            <td>Page Size Change</td>
+            <td>Select <code>"12 per page"</code></td>
+            <td><code>itemsPerPage = 12</code></td>
+            <td>Adjusts cards count per view page</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-07</code></td>
+            <td>Dependent Dropdown</td>
+            <td>Select Country: <code>"India"</code></td>
+            <td><code>locationsData["India"]</code></td>
+            <td>Populates State dropdown dynamically</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-08</code></td>
+            <td>Dependent Dropdown</td>
+            <td>Select State: <code>"Gujarat"</code></td>
+            <td><code>locationsData["India"]["Gujarat"]</code></td>
+            <td>Populates Cities dropdown (Anand, Nadiad...)</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-09</code></td>
+            <td>Offline Caching</td>
+            <td>Reload data when offline</td>
+            <td><code>localStorage.getItem()</code></td>
+            <td>Serves cached JSON with offline badge</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+          <tr>
+            <td><code>TC-10</code></td>
+            <td>Reset Filters</td>
+            <td>Click "Clear Filters"</td>
+            <td>Reset input values & page state</td>
+            <td>Restores original complete dataset view</td>
+            <td><span class="badge-valid">PASSED</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a href="index.html" class="btn-primary" style="text-decoration:none; display:inline-block; padding:10px 20px; background:#003366; color:white; border-radius:6px;">← Back to Data Hub</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT Student Hub | Department of Computer Engineering. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

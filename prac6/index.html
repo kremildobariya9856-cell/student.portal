@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data Hub & Directory | CHARUSAT Student Hub</title>
+  <meta name="description" content="Explore campus events, student profiles, and FAQs with real-time search, multi-criteria filtering, sorting, pagination, and offline caching.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section with Theme Branding -->
+  <header>
+    <div class="header-brand">
+      <img src="./CHARUSAT.jpg" alt="CHARUSAT Logo">
+      <h1>CHARUSAT Student Hub</h1>
+    </div>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../prac-5/index.html">Register (Prac 5)</a></li>
+        <li><a href="index.html" aria-current="page">Data Hub (Prac 6)</a></li>
+        <li><a href="../prac-7/index.php">Form Processing (Prac 7)</a></li>
+        <li><a href="../login.html">Login</a></li>
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="../events.html">Events</a></li>
+        <li><a href="../profile.html">Profile</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../admin.html">Admin</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="breadcrumb-container">
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li aria-current="page">Campus Data Hub & Directory</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- Page Title & Overview Banner with Cache Status Badge -->
+    <div class="page-title-banner">
+      <div>
+        <h2>Campus Information Directory</h2>
+        <p>Dynamic data explorer consuming JSON feeds using Fetch API with real-time search, filtering, sorting, and pagination.</p>
+      </div>
+      <div class="cache-status-badge" aria-live="polite">
+        <span id="cacheDot" class="badge-dot"></span>
+        <span id="cacheStatusText">Initializing Data Feed...</span>
+      </div>
+    </div>
+
+    <!-- Data Source Tabs Switcher -->
+    <div class="data-tabs-container" role="tablist" aria-label="Data Directory Tabs">
+      <button class="tab-btn active" data-tab="events" role="tab" aria-selected="true">
+        📅 Campus Events
+      </button>
+      <button class="tab-btn" data-tab="students" role="tab" aria-selected="false">
+        👨‍🎓 Student Directory
+      </button>
+      <button class="tab-btn" data-tab="faqs" role="tab" aria-selected="false">
+        ❓ FAQ Knowledge Base
+      </button>
+      <button class="tab-btn" data-tab="location" role="tab" aria-selected="false">
+        🌍 Dependent Location Selector
+      </button>
+    </div>
+
+    <!-- Search, Filter & Sort Controls Toolbar -->
+    <div id="toolbarCard" class="toolbar-card">
+      <div class="toolbar-group">
+        
+        <!-- Live Search Box -->
+        <div class="search-box-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by title, name, tags..." aria-label="Search items">
+        </div>
+
+        <!-- Category Dropdown Filter -->
+        <select id="categorySelect" class="filter-select" aria-label="Filter by Category">
+          <option value="">All Categories</option>
+        </select>
+
+        <!-- Sorting Dropdown -->
+        <select id="sortSelect" class="sort-select" aria-label="Sort options">
+          <option value="default">Sort By: Default</option>
+          <option value="title-asc">Title / Name (A to Z)</option>
+          <option value="title-desc">Title / Name (Z to A)</option>
+          <option value="date-desc">Newest / Top Rated First</option>
+          <option value="date-asc">Oldest First</option>
+        </select>
+
+        <!-- Page Size Control -->
+        <select id="pageSizeSelect" class="pagesize-select" aria-label="Items per page">
+          <option value="6">6 per page</option>
+          <option value="9">9 per page</option>
+          <option value="12">12 per page</option>
+          <option value="15">15 per page</option>
+        </select>
+
+        <!-- Reset Button -->
+        <button type="button" id="btnResetFilters" class="btn-action-small">🧹 Clear Filters</button>
+      </div>
+    </div>
+
+    <!-- Results Status Bar -->
+    <div class="results-info-bar">
+      <span id="resultsCount">Loading records...</span>
+    </div>
+
+    <!-- Dynamic Card Grid Container (for Events & Students) -->
+    <div id="cardsGrid" class="cards-grid">
+      <!-- Dynamically populated via Fetch API in script.js -->
+    </div>
+
+    <!-- Accordion Container (for FAQs) -->
+    <div id="faqContainer" style="display:none;">
+      <!-- Dynamically populated via script.js -->
+    </div>
+
+    <!-- Dependent Dropdowns Extension Card (Intermediate Extension) -->
+    <div id="locationExtensionCard" class="extension-card" style="display:none;">
+      <h3>🌍 Dependent Country, State & City Selector (Intermediate Extension)</h3>
+      <p style="margin-bottom:15px; color:#475569;">Select a Country to populate States, then select a State to dynamically filter available Cities using JSON data mapping.</p>
+      
+      <div class="dropdown-grid">
+        <div>
+          <label for="countrySelect" style="display:block; font-weight:bold; margin-bottom:6px;">1. Country</label>
+          <select id="countrySelect" class="filter-select" style="width:100%;">
+            <option value="">-- Select Country --</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="stateSelect" style="display:block; font-weight:bold; margin-bottom:6px;">2. State / Region</label>
+          <select id="stateSelect" class="filter-select" style="width:100%;" disabled>
+            <option value="">-- Select State / Region --</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="citySelect" style="display:block; font-weight:bold; margin-bottom:6px;">3. City</label>
+          <select id="citySelect" class="filter-select" style="width:100%;" disabled>
+            <option value="">-- Select City --</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="locationSummaryBox" class="location-output-box">
+        <span id="locationSummaryText"><em>Select a country, state, and city from the dropdowns above.</em></span>
+      </div>
+    </div>
+
+    <!-- Pagination Controls -->
+    <div id="paginationContainer" class="pagination-container">
+      <div id="paginationControls" class="pagination-controls">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section matching Prac-4/5 style -->
+  <footer>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+        <li><a href="test-cases.html" style="color:#ff9800;">Lab Evaluation Matrix</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 CHARUSAT Student Hub | Department of Computer Engineering. All rights reserved.</p>
+  </footer>
+
+  <!-- Script File Link -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
