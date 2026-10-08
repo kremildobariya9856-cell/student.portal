@@ -1,0 +1,14 @@
+[
+  { "id": 1, "title": "Annual Tech Fest", "date": "2027-01-25", "category": "Technical", "venue": "Main Auditorium", "description": "A two-day technical festival with coding contests, robotics and project exhibitions." },
+  { "id": 2, "title": "Career Guidance Workshop", "date": "2027-01-22", "category": "Career", "venue": "Seminar Hall 2", "description": "Industry experts share tips on resume building, interviews and career planning." },
+  { "id": 3, "title": "Sports Meet", "date": "2027-01-30", "category": "Sports", "venue": "University Ground", "description": "Annual sports meet open to all departments, including cricket, athletics and volleyball." },
+  { "id": 4, "title": "Cultural Night", "date": "2027-02-05", "category": "Cultural", "venue": "Open Air Theatre", "description": "An evening of music, dance and drama performances by students." },
+  { "id": 5, "title": "Hackathon 24Hrs", "date": "2027-02-10", "category": "Technical", "venue": "CE Department Lab", "description": "A 24 hour hackathon where teams build and pitch software projects." },
+  { "id": 6, "title": "Placement Drive Briefing", "date": "2027-02-12", "category": "Career", "venue": "Seminar Hall 1", "description": "Pre-placement talk covering eligibility, process and company profiles." },
+  { "id": 7, "title": "Inter-College Football Match", "date": "2027-02-15", "category": "Sports", "venue": "Football Ground", "description": "Friendly match against a neighbouring college team." },
+  { "id": 8, "title": "Rangoli and Art Competition", "date": "2027-02-18", "category": "Cultural", "venue": "Student Activity Center", "description": "Open competition for rangoli, painting and craft work." },
+  { "id": 9, "title": "Web Development Bootcamp", "date": "2027-02-20", "category": "Technical", "venue": "Computer Lab 3", "description": "Two day hands-on bootcamp on HTML, CSS, JavaScript and the Fetch API." },
+  { "id": 10, "title": "Resume Building Session", "date": "2027-02-22", "category": "Career", "venue": "Seminar Hall 2", "description": "Practical session on writing an effective resume and cover letter." },
+  { "id": 11, "title": "Annual Sports Day Finals", "date": "2027-02-25", "category": "Sports", "venue": "University Ground", "description": "Finals of the annual sports day with prize distribution." },
+  { "id": 12, "title": "Garba Night", "date": "2027-02-28", "category": "Cultural", "venue": "Open Air Theatre", "description": "Traditional Garba night to celebrate the festive season." }
+]
