@@ -1,0 +1,26 @@
+# .gitignore for StudentHub Portal
+
+# Environment and sensitive files
+.env
+*.local
+
+# Temporary / Scratch files
+scratch/
+*.log
+*.tmp
+
+# Operating System files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Large / generated uploads (keep default sample posters)
+uploads/*
+!uploads/.gitkeep
+!uploads/spoural.jpg
