@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href = "./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | CHARUSAT Student Hub</title>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+
+    <h1>CHARUSAT Student Hub</h1>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html" aria-current="page">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Events</li>
+      </ol>
+    </nav>
+
+  <main id="main-content">
+    <h2>Campus events</h2>
+    <img src="SPOURAL.jpg" alt="Students participating in the campus Spoural event">
+
+    <section aria-labelledby="upcoming-heading">
+      <h3 id="upcoming-heading">Upcoming events</h3>
+
+      <div class="events-controls">
+        <div class="field">
+          <label for="eventSearch">Search events</label>
+          <input type="text" id="eventSearch" name="eventSearch" placeholder="Search by title or venue">
+        </div>
+
+        <div class="field">
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter" name="categoryFilter">
+            <option value="all">All categories</option>
+            <option value="Technical">Technical</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sports</option>
+            <option value="Career">Career</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="sortEvents">Sort by</label>
+          <select id="sortEvents" name="sortEvents">
+            <option value="date-asc">Date: earliest first</option>
+            <option value="date-desc">Date: latest first</option>
+            <option value="title-asc">Title: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="eventStatus" role="status"></p>
+
+      <div id="eventList" class="event-list"></div>
+
+      <div id="pagination" class="pagination" aria-label="Events pagination"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 CHARUSAT Student Hub. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+<script src="events.js"></script>
+</body>
+</html>
